@@ -1,0 +1,14 @@
+<html>
+<head>
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            document.getElementById('calculate').addEventListener('click', () => { window.opener.postMessage({}, '*'); });
+        });
+
+    </script>
+</head>
+<body>
+    <button id="calculate">Calculate</button>
+    <button>Test</button>
+</body>
+</html>

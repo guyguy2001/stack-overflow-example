@@ -1,0 +1,16 @@
+<html>
+<head>
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            document.getElementById('open').addEventListener('click', () => { window.open('page2.html'); });
+        });
+        window.addEventListener('message', function () {
+            for (let i = 0; i < 100000; i++)
+                console.log(i);
+        });
+    </script>
+</head>
+<body>
+    <button id="open">Open</button>
+</body>
+</html>
